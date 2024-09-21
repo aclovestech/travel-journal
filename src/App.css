@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 50px auto;
+  max-width: 550px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+.navbar {
+  background-color: #F55A5A;
+  height: 70px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar>p {
+  margin: 0px;
+  color: #FFFFFF;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.globe-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.cards-panel {
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.card {
+  width: 470px;
+  display: flex;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* start of separator */
+
+.card::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #F5F5F5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+.card:last-child::after {
+  content: none;
+}
+
+/* end of separator */
+
+.card__image {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  margin: 20px;
+}
+
+.card__pin-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card__pin {
+  width: 7px;
+  height: 10px;
+  margin: 0px;
+  margin-right: 5px;
+}
+
+.card__location {
+  margin: 0px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+}
+
+.card__location,
+.card__link,
+.card__dates,
+.card__description {
+  font-size: 10.24px;
+}
+
+.card__link {
+  color: #918E9B;
+}
+
+.card__title {
+  margin: 5px 0px 20px 0px;
+}
+
+.card__dates {
+  margin: 0px;
+}
