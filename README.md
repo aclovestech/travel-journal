@@ -1,4 +1,4 @@
-# App #4: Travel Journal
+# Travel Journal
 
 ## Reference(s):
 
